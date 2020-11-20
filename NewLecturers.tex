@@ -25,8 +25,9 @@
 %%
 %% The first command in your LaTeX source must be the \documentclass command.
 \documentclass[sigconf]{acmart}
-\usepackage[true]{anonymous-acm}
+\usepackage[false]{anonymous-acm}
 \usepackage{paralist}
+\settopmatter{authorsperrow=3}
 
 %%%% As of March 2017, [siggraph] is no longer used. Please use sigconf (above) for SIGGRAPH conferences.
 
@@ -99,7 +100,8 @@
 %% "authornote" and "authornotemark" commands
 %% used to denote shared contribution to the research.
 \authoranon{
- \authornote{All authors contributed to this paper equally}
+ 
+ 
  \author{Tom Crick}
  \authornotemark[1]
  \affiliation{
@@ -116,16 +118,16 @@
    \city{Bath}
    \country{UK}
  }
- \email{j.h.davenport@bath.ac.uk}
+ \email{j.h.davenport@bath.ac.uk }
 
   \author{Alan Hayes}
- \authornotemark[1]
-  \affiliation{%
-   \institution{ University of Bath}
-   \city{Bath}
-   \country{UK}
- }
- \email{a.hayes@bath.ac.uk}
+\authornotemark[1]
+\affiliation{%
+	\institution{ University of Bath}
+	\city{Bath}
+	\country{UK}
+}
+\email{a.hayes@bath.ac.uk }
 
  \author{Alastair Irons}
  \authornotemark[1]
@@ -144,8 +146,10 @@
    \country{UK}
  }
  \email{tom.prickett@northumbria.ac.uk}
-
+ 
+ \authornote{All authors contributed to this paper equally}
 }
+
 
 %%
 %% By default, the full list of authors will be used in the page
@@ -153,7 +157,7 @@
 %% other information printed in the page headers. This command allows
 %% the author to define a more concise list
 %% of authors' names for this purpose.
-\renewcommand{\shortauthors}{Trovato and Tobin, et al.}
+\renewcommand{\shortauthors}{Crick et al.}
 
 %%
 %% The abstract is a short summary of the work to be presented in the
@@ -192,7 +196,13 @@ The early career of a computer science academic in the United Kingdom (UK) -- as
 %%Comment from AI Not sure in which section- but do we want to play up the consultations we have undertaken so far – particularly the work Alan has done in reaching out to colleagues and including positive and negative feedback ? Maybe bring in the work that James identified with the Physics folk in this discussion ??
 \section{What is it?}	
 %%A short description of the practice you're presenting
-This paper explores the work-in-progress to address some of these structural, cultural and community challenges at both the institutional and national level in the United Kingdom (UK), based on empirical themes collected from a workshop help at a recent UK computer science education research conference. It presents a progress report from an ongoing project exploring, developing and delivering an initiative to supplement institution-based professional development and training available to early-career computer science academics, with an offering of regional and national activities. It describes the work undertaken to date to research, co-design and develop a training course for those new to teaching computer science in the UK. This initiative began via sector-led discussions regarding how the computer science education community could be better supported at \textanon{BCS Academy of Computing Board}{BLINDED} and \textanon{Institute of Coding}{BLINDED}. This was followed by the recruitment of a steering group of computer science academics, from across a representative range of UK universities. The academic career profile and experience of the academics involved is deliberately diverse; it includes junior academics to more senior academics, as well as a number of members of the professoriate and senior members of \textanon{BCS Academy of Computing}{BLINDED}. The group also includes a number of computer science academics who have been recognised as National Teaching Fellows by Advance HE. The views of this steering committee were combined with the outcomes of a workshop at the \textanon{ACM UK and Ireland Computing Education Research Conference 2020}{BLINDED Location}, to formulate a pilot training course. The training course will be first run in December 2020, so initial findings and progress can be shared at this conference. This paper presents an overview of the co-design of the trial run of the training programme, as well as the key outcomes from the UK workshop which took place in September 2020.
+This paper explores the work-in-progress to address the structural, cultural and community challenges at both the institutional and national level in the United Kingdom (UK), based on empirical themes collected from a workshop help at a recent UK computer science education research conference. It reports progress from a project exploring, developing and delivering an initiative to supplement institution-based professional development and training available to early-career computer science academics, with an offering of regional and national activities. It describes the work undertaken to date to research, co-design and develop a training course for those new to teaching computer science in the UK. 
+
+This initiative began via sector-led discussions regarding how the computer science education community could be better supported at \textanon{BCS Academy of Computing Board}{BLINDED} and \textanon{Institute of Coding}{BLINDED}. This was followed by the recruitment of a steering group of computer science academics, from across a representative range of UK universities. The academic career profile and experience of the academics involved is deliberately diverse; it includes junior academics to more senior academics, as well as a number of members of the professoriate and senior members of \textanon{BCS Academy of Computing}{BLINDED}. \begin{comment}
+content...
+The group also includes a number of computer science academics who have been recognised as National Teaching Fellows by Advance HE. 
+\end{comment}
+The views of this steering committee were combined with the outcomes of a workshop at the \textanon{ACM UK and Ireland Computing Education Research Conference 2020}{BLINDED Location}, to formulate a pilot training course. The training course will be first run in December 2020, so initial findings and progress can be shared at this conference. This paper presents an overview of the co-design of the trial run of the training programme, as well as the key outcomes from the UK workshop which took place in September 2020.
 
 % \citeanon{IOC}
 % \citeanon{BCSAcademy}
@@ -200,31 +210,35 @@ This paper explores the work-in-progress to address some of these structural, cu
 
 \section{Why are you doing it?}
 %%What happened before? What is it changing / replacing / improving? What gap is it filling?
-There are a number of disciplinary challenges which are well documented within computer science education, including substantial changes in national curricula and qualifications~\cite{brown-et-al-toce2014}. Attrition and failure rates can be high, learning programming for perhaps the first time remains a significant hurdle~\cite{davenport-et-al:latice2016,murphy-et-al:programming2017,simon-et-al:sigcse2018}, with a range of issues impacting failure rates~\cite{Watson:2014:FRI:2591708.2591749,prickett-et-al:iticse2020}. Student satisfaction as measured by national surveys is reported as commonly below that of other disciplines~\cite{Sinclair2015}; concerns related to the employment prospects of graduates have been reported as inferior to other disciplines, especially across STEM~\cite{shadbolt2016shadbolt}. Effectively addressing these disciplinary challenges involves a number of evolving pedagogic approaches, as well as wider system and societal issues. To become a confident and capable computer science academic (from a learning, teaching and assessment perspective) requires maintaining currency in terms of specialist subject knowledge but also fluency in how to respond to some of the pedagogic challenges the discipline presents.
+There are a number of disciplinary challenges which are well documented within computer science education, including substantial changes in national curricula and qualifications~\cite{brown-et-al-toce2014}. Attrition and failure rates can be high, learning programming for perhaps the first time remains a significant hurdle~\cite{davenport-et-al:latice2016,murphy-et-al:programming2017,simon-et-al:sigcse2018}, with a range of issues impacting failure rates~\cite{Watson:2014:FRI:2591708.2591749,prickett-et-al:iticse2020}. Student satisfaction as measured by national surveys is reported as commonly below that of other disciplines~\cite{Sinclair2015}; concerns related to the employment prospects of graduates have been reported as inferior to other disciplines, especially across STEM~\cite{shadbolt2016shadbolt}. Effectively addressing these disciplinary challenges involves a number of evolving pedagogic approaches, as well as wider system and societal issues. To become a confident and capable computer science academic (from a education perspective) requires maintaining currency in terms of specialist subject knowledge but also fluency in how to respond to the education challenges the discipline presents. %%comment what is the better term here? education or pedagogy?
 
-The complex and contested demands of learning and teaching in UK higher education make the early career of an academic challenging ~\cite{Thomas2015} and potentially lonely ~\cite{Foote2009}, especially when balanced against their research aspirations (or indeed, targets), and wider professional service commitments. Learning and teaching development in the UK commonly involves working towards Fellowship of the Higher Education Academy (FHEA)~\cite{fellowship}, either by direct application to Advance HE or by an accredited university postgraduate course. Typically, this is supported by mentoring from within a department. The quality of learning provided will be promoted in part by the strength of the community of practice operating within the department~\cite{Bolander2008} and the communities of practice that exist at a national and international level~\cite{Thomas2015}.
+The complex and contested demands of education in UK higher education make the early career of an academic challenging ~\cite{Thomas2015} and potentially lonely ~\cite{Foote2009}, especially when balanced against their research aspirations (or indeed, targets), and wider professional service commitments. Education development in the UK commonly involves working towards Fellowship of the Higher Education Academy (FHEA)~\footnote{\url{https://www.advance-he.ac.uk/fellowship}}, either by direct application to Advance HE or by an accredited university postgraduate course. Typically, this is supported by mentoring from within a department. The quality of learning provided will be promoted in part by the strength of the community of practice operating within the department~\cite{Bolander2008} and the communities of practice that exist at a national and international level~\cite{Thomas2015}.
 
-Together, the challenges of the teaching the discipline and the challenges of how to become an effective and successful academic can be fraught. However, some mechanisms already exist to better support this professional development. For a number of years, mentoring has been recognised as a important mechanism in the development of academics, with formal mentoring now common as part of the process of on-boarding early-career academics. Commonly this takes the form of an experienced academic providing support for an early-career colleague. Mentoring has been highlighted as part of a set of activities help diversify the staff base~\cite{Golubchik2018}. While such mechanisms can be very effective, limiting guidance and support to one source rather than a wider and more diverse community can be limiting~\cite{deJanasz}. Informal mentoring can also be very effective, but it is not without issue. For example, it has been reported that women can feel marginalised from informal mentoring partnerships~\cite{gibson2006mentoring}. In the UK, Black, Asian and Minority Ethnic (BAME) colleagues are ``\emph{poorly represented in both senior academic and university leadership roles: of 19,000 people employed as professors in the United Kingdom, only 400 are BAME women. In a typical gathering of 100 professors, 90 would be white and there would be just two BAME women.}'' \cite[p.~I]{UniversitiesUK19}. There are a plethora of issues that continue to reinforce aspects of this of this inequality~\cite{arday20}. Policy recommendations have been made (including new models for mentoring and the establishing of support networks~\cite{bhopal2014experiences}), and initiatives developed and executed (including Athena Swan~\cite{AthenaSwan} and the Race Equality Charter~\cite{REC}). Equally research suggests that care needs to be taken not to conflate issues of race and gender~\cite{Bhopal19} or some of the challenges being faced may not be addressed. Research related to cross-gender or cross-racial mentoring is relatively rare, however it has been reported that cross-racial mentoring between faculty and students can work if an ally development model is employed~\cite{reddick2016don}. Clearly ally work is challenging and will require continual reflection, perseverance and careful consideration of power and positions in response to repression~\cite{Patton2015}. However the distance and absence of direct power structures between universities may make it more straightforward to function as an ally in a cross-university mentoring relationship which is unburdened by managerial or organisational concerns. Such mentoring relationships are also likely to be educational for the mentors. Mentors would also be promoting and giving back to the community. Ideally, the mentoring will evolve into a longer term relationship which are mutually beneficial and help to promote and facilitate work-based learning for the academics involved.
+Simultaneously mastering the challenges of educating the discipline and those of how to become an effective and successful academic can be fraught. However, some mechanisms already exist to better support this professional development. For a number of years, mentoring has been recognised as a important mechanism in the development of academics, with formal mentoring now common as part of the process of on-boarding early-career academics. Commonly this takes the form of an experienced academic providing support for an early-career colleague. Mentoring has been highlighted as part of a set of activities help diversify the staff base~\cite{Golubchik2018}. While such mechanisms can be very effective, limiting guidance and support to one source rather than a wider and more diverse community can be limiting~\cite{deJanasz}. Informal mentoring can also be very effective, but it is not without issue. For example, it has been reported that women can feel marginalised from informal mentoring partnerships~\cite{gibson2006mentoring}. In the UK, Black, Asian and Minority Ethnic (BAME) colleagues are ``\emph{poorly represented in both senior academic and university leadership roles: of 19,000 people employed as professors in the United Kingdom, only 400 are BAME women. In a typical gathering of 100 professors, 90 would be white and there would be just two BAME women.}'' \cite[p.~I]{UniversitiesUK19}. There are a plethora of issues that continue to reinforce aspects of this of this inequality~\cite{arday20}. Policy recommendations have been made (including new models for mentoring and the establishing of support networks~\cite{bhopal2014experiences}), and initiatives developed and executed (including Athena Swan \footnote{\url{https://www.advance-he.ac.uk/equality-charters/athena-swan-charter}}and the Race Equality Charter \footnote{\url{ https://www.advance-he.ac.uk/charters/race-equality-charter}}. Equally research suggests that care needs to be taken not to conflate issues of race and gender~\cite{Bhopal19} or some of the challenges being faced may not be addressed. Research related to cross-gender or cross-racial mentoring is relatively rare, however it has been reported that cross-racial mentoring between faculty and students can work if an ally development model is employed~\cite{reddick2016don}. Clearly ally work is challenging and will require continual reflection, perseverance and careful consideration of power and positions in response to repression~\cite{Patton2015}. However the distance and absence of direct power structures between universities may make it more straightforward to function as an ally in a cross-university mentoring relationship which is unburdened by managerial or organisational concerns. Such mentoring relationships are also likely to be educational for the mentors, who would also be promoting and giving back to the community. Ideally, the mentoring will evolve into a longer term relationship which are mutually beneficial and help to promote and facilitate work-based learning for the academics involved.
 
+\begin{comment}
 This paper summaries an initiative to date to explore the potential to supplement the existing initiatives with further regional and national-level training and development opportunities for early-career computer science academics.
+\end{comment}
 
 \section{Where does it fit?}
 %%A short description of your teaching context. You may, for instance, include a description of intake, class size, curriculum sequence; anything that's necessary for others to understand your situation. How do things work at your institution?
-In the UK, early-career academics have had varied prior experience including:
-\begin{compactitem}
-\item Postdocs taking up their first academic appointment at the start of their academic career;
-\item Postdocs who are teaching as part of their career development in preparation for applying for an academic position;
-\item PhD students, aspiring to an academic career, with significant teaching responsibilities;
-\item Established academics (international) new to UK HE;
-\item Junior academics who have been in a temporary post for a few years;
-\item Those moving from FE into their first HE job;
-\item Those moving from industry into their first HE job;
-\item CS academics at HEIs who do not currently specify that their lecturing staff complete a PG teaching qualification.
-\end{compactitem}
+In the UK, early-career academics have had varied prior experience including: Postdocs taking up their first academic appointment at the start of their academic career;
+Postdocs who are teaching as part of their career development in prepaation for applying for an academic position;
+PhD students, aspiring to an academic career, with significant teaching responsibilities;
+Established academics (international) new to UK HE;
+Junior academics who have been in a temporary post for a few years;
+Those moving from FE into their first HE job;
+ Those moving from industry into their first HE job;
+and CS academics at HEIs who do not currently specify that their lecturing staff complete a PG teaching qualification.
 
-In any given year, the number of individuals across these positions will vary; but with over one hundred higher education institutions in the UK that teach computing, there is usually at least one faculty member in this position. As such, there is a potentially large market of individuals who could benefit from this proposed professional development.
 
+In any given year, the number of individuals across these positions will vary; but with over one hundred higher education institutions in the UK that teach computing, there is usually at least one faculty member in this position, hence a potentially large group of individuals who could benefit from this proposed professional development.
+
+\begin{comment}
 For the pilot phase of this programme (which will run in December 2020), a training course will be run for early-career academics based at the institutions of those who are members of the steering committee. The training programme follows a blended approach consisting of synchronous online sessions supported with the availability of the material on a supporting website. The programming includes live virtual sessions presented by colleagues from UK computer science departments. The sessions will be practical in nature, and includes pedagogical groundings, the sharing of best practice, how to developing good practice, and (perhaps more importantly) the sharing of ``what to avoid doing''. The intention is to supplement the programme with the provision of cross-institution mentoring at the local and regional level.
+\end{comment}
+
+For the pilot phase of this programme (which will run in December 2020), a training course will be run for early-career academics based at the institutions of those who are members of the steering committee. The training programme follows a online approach. The programming includes live virtual sessions presented by colleagues from UK computer science departments. For interested attendees,  the intention is to supplement the programme with the provision of cross-institution mentoring.
 
 \section{Does it work?}	
 %%How do you know? Give some evidence of effectiveness in context.
@@ -260,7 +274,7 @@ The national computer science education community was seen as a very positive de
 
 \section{Who else has done this?}
 %%Where did you get the idea from? (If from published reports, please include references). How did you find out about it? Was it easy/hard to adopt? What did you change?
-It has been reported the most commonly employed mechanism for continuing professional development (CPD) is conversations between peers~\cite{King2004}. A number of communities exist to support these conversations at the local, national and international level. Internationally this development is supported by the groupings such as ACM Special Interest Group in Computer Science Education (ACM SIGCSE) or the IEEE Education Society. These international professional bodies run a number of conferences to promote discussion and dialog as well as dissemination of ideas. In the UK and Ireland, a chapter of SIGCSE further promotes the community-building by running an annual Computing Education Practice conference (CEP) and an annual Computing Education Research conference (UKICER). However whilst early-career academics are welcome to attend the conferences and seminars are not directly aimed a the needs of early-career academics who may in any case find it challenging to find funding for attendance. The ACM UK SIGCSE chapter also holds Twitter meets and runs a computer science education research journal club. Whilst early-career computer science academics are very much welcome to join in these discussions, they are not really the target market. Some universities have centres which further promote these conversations, such as the Centre for Computing Science Education at the University of Glasgow\footnote{\url{https://www.gla.ac.uk/research/az/ccse/}}. However, as identified in both the 2012 and 2017 Royal Society reviews of computing education in the UK, there is a small (but growing) base in UK universities. In summary, the international and national Initiatives help promote a community that experienced academics can access to provide CPD; however the CPD for early-career academics is less developed, particularly for those at institutions who do not have established centres or CSE research groups.
+It is reported that the most commonly employed mechanism for continuing professional development (CPD) is conversations between peers~\cite{King2004}. A number of communities exist to support these conversations at the local, national and international level. Internationally this development is supported by the groupings such as ACM Special Interest Group in Computer Science Education (ACM SIGCSE) or the IEEE Education Society. These international professional bodies run a number of conferences to promote discussion and dialog as well as dissemination of ideas. In the UK and Ireland, a chapter of SIGCSE further promotes the community-building by running an annual Computing Education Practice conference (CEP) and an annual Computing Education Research conference (UKICER). However whilst early-career academics are welcome to attend, the conferences and seminars are not directly aimed a the needs of early-career academics who may in any case find it challenging to find funding for attendance. The ACM UK SIGCSE chapter also holds Twitter meets and runs a computer science education research journal club. Whilst early-career computer science academics are very much welcome to join in these discussions, they are not really the target market. Some universities have centres which further promote these conversations, such as the Centre for Computing Science Education at the University of Glasgow\footnote{\url{https://www.gla.ac.uk/research/az/ccse/}}. However, as identified in both the 2012 and 2017 Royal Society reviews of computing education in the UK, there is a small (but growing) base in UK universities. In summary, the international and national Initiatives help promote a community that experienced academics can access to provide CPD; however the CPD for early-career academics is less developed, particularly for those at institutions who do not have established centres or CSE research groups.
 
 % \cite{SIGCSE}
 % \cite{IEEEES}
@@ -279,7 +293,18 @@ As well as generic pedagogic challenges, most disciplines including computer sci
 \section{What will you do next?}
 %%Will you vary this, or develop it further?
 
-The recent mapping and analysis highlights that there is space within the UK computer science community of practice to establish a new training programme for early-career computer science academics that augments what is already provided by individual institutions. The discussions to date have led to the co-design of a training programme shown in Table~\ref{tab:table1}. The programme will be delivered over five half-day blocks:
+The recent mapping and analysis highlights that there is space within the UK computer science community of practice to establish a new training programme for early-career computer science academics that augments what is already provided by individual institutions. However discussions within the steering group of academics highlight a few questions that would benefit from being answered in order to appropriately design the new programme including
+\begin{itemize}
+	\item \textbf{Motivation to attend.} Early career colleagues are extremely busy so the course needs to be genuniely helpful and the benefits from attending need to be very clear
+	\item \textbf{Building a community} The course needs to facilitate the growing of the community between the attendees and links to the wider community of practice in the UK.
+	\item \textbf{Form} What form should it take? Should it be online or blended or face to face? National? Regional? What duration?
+\end{itemize}
+These are all questions that require the input of early career colleagues. To explore these questions a training course / workshop will be run in December 2020. The course will include sessions related to the teaching in a laboratory (including programming), supervising multiple projects, a panel at which attendees will be expected to raise three questions and a workshop exploring the CPD needs of the attendees. The outcomes of this workshop will be available to discuss at the conference and further input sought regarding next steps.
+
+\begin{comment}
+
+
+The discussions to date have led to the co-design of a training programme shown in Table~\ref{tab:table1}. The programme will be delivered over five half-day blocks:
 \begin{table}[h]
 %%\begin{tabular}{|l|p{200}|}
 \begin{tabular}{|p{0.3in}|p{2.8in}|}
@@ -297,7 +322,8 @@ Day   & Subject                                                      \\ \hline
 %%Comment from AI - maybe something about in addition we are looking at mentoring scheme ??
 %%And maybe something about ongoing CPD – these days could be opened up to established colleagues (or is that a whole new paper). But also ongoing CPD for those new colleagues who complete the 5
 %%Something back to community of practice – peer led development and WBL for academics ??
-This programme will be delivered for the first time in December 2020. The initial delivery of the programme will be via a blended learning model, with attendees completing activities as well as attending a series of interactive and collaborative webinars. As part of the pilot programme, the intention will be to establish models of cross-university mentoring at the local and regional level. The group of academics involved in the development of this initiative have broad learning, teaching and assessment expertise within the field of computer science, in both the UK and internationally. This bread of expertise will enable mentoring across diverse learning and teaching responsibilities. Following evaluation of this pilot phase, the programme will be made widely available into 2021 and beyond. Opting for a blended learning approach takes into consideration the longer-term impacts of the COVID-19 pandemic on the UK higher education sector, especially considering its specific impact on the computer science education community~\cite{crick-et-al:ukicer2020}; however, further consideration will be given to future face-to-face delivery models.
+This programme will be delivered for the first time in December 2020. The initial delivery of the programme will be via a blended learning model, with attendees completing activities as well as attending a series of interactive and collaborative webinars. As part of the pilot programme, the intention will be to establish models of cross-university mentoring at the local and regional level. The group of academics involved in the development of this initiative have broad learning, teaching and assessment expertise within the field of computer science, in both the UK and internationally. This breadth of expertise will enable mentoring across diverse learning and teaching responsibilities. Following evaluation of this pilot phase, the programme will be made widely available into 2021 and beyond. Opting for a blended learning approach takes into consideration the longer-term impacts of the COVID-19 pandemic on the UK higher education sector, especially considering its specific impact on the computer science education community~\cite{crick-et-al:ukicer2020}; however, further consideration will be given to future face-to-face delivery models.
+\end{comment}
 
 \section{Why are you telling us this?}	
 %%What is interesting, or useful, about this to someone else?
