@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,6 +17,14 @@
 L.~Bengtsson.
 \newblock {Take-Home Exams in Higher Education: A Systematic Review}.
 \newblock \emph{Educ. Sci.}, 9:\penalty0 267--282, 2019.
+
+\bibitem[Crick et~al.(2020)Crick, Davenport, Hanna, Irons, and
+  Prickett]{Cricketal2020d}
+T.~Crick, J.~Davenport, P.~Hanna, A.~Irons, and T.~Prickett.
+\newblock {Overcoming the Challenges of Teaching Cybersecurity in UK Computer
+  Science Degree Programmes}.
+\newblock In \emph{Proceedings 50th Annual Frontiers in Education Conference},
+  pages 17:1--17:9, 2020.
 
 \bibitem[Crick et~al.(2022)Crick, Prickett, and Bradnum]{Cricketal2022e}
 T.~Crick, T.~Prickett, and J.~Bradnum.
@@ -55,8 +63,8 @@ Finnie-Ansley.J., P.~Denny, B.~Becker, A.~Luxton-Reilly, and J.~Prather.
   \url{https://www.nytimes.com/2022/05/27/technology/college-students-cheating-software-honorlock.html},
   2022.
 
-\bibitem[JISC (Uniwise)(2022)]{JISC2022a}
-J.I.S.C. (Uniwise).
+\bibitem[(Uniwise)(2022)]{JISC2022a}
+J.~I. S.~C. (Uniwise).
 \newblock {Online proctoring: panacea or problem?}
 \newblock
   \url{https://www.jisc.ac.uk/membership/stories/online-proctoring-panacea-or-problem},
