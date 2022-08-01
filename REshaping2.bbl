@@ -1,0 +1,57 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Alpha Academic Appeals}(2022)]{AcademicAppeals2022a}
+{Alpha Academic Appeals}.
+\newblock {Press release on prevalence of cheating in online assessment, July
+  2022}.
+\newblock
+  \url{http://www.academicappeals.co.uk/news/05072022201747-press-release-on-prevalence-of-cheating-in-online-assessment--july-2022/},
+  2022.
+
+\bibitem[Bengtsson(2019)]{bengtsson2019a}
+L.~Bengtsson.
+\newblock {Take-Home Exams in Higher Education: A Systematic Review}.
+\newblock \emph{Educ. Sci.}, 9:\penalty0 267--282, 2019.
+
+\bibitem[Dickinson(2022)]{Dickinson2022a}
+J.~Dickinson.
+\newblock {Did 1 in 6 students cheat in online assessments this year?}
+\newblock
+  \url{https://wonkhe.com/blogs/did-1-in-6-students-cheat-in-online-assessments-this-year/},
+  2022.
+
+\bibitem[Finnie-Ansley.J. et~al.(2022)Finnie-Ansley.J., Denny, Becker,
+  Luxton-Reilly, and Prather]{FinnieAnsleyetal2022a}
+Finnie-Ansley.J., P.~Denny, B.~Becker, A.~Luxton-Reilly, and J.~Prather.
+\newblock {The Robots Are Coming: Exploring the Implications of OpenAI Codex on
+  Introductory Programming}.
+\newblock \emph{ACE '22: Australasian Computing Education Conference}, pages
+  10--19, 2022.
+
+\bibitem[{New York Times (Kashmir Hill)}(2022)]{NewYorkTimes2022l}
+{New York Times (Kashmir Hill)}.
+\newblock {Accused of Cheating by an Algorithm, and a Professor She Had Never
+  Met}.
+\newblock
+  \url{https://www.nytimes.com/2022/05/27/technology/college-students-cheating-software-honorlock.html},
+  2022.
+
+\bibitem[JISC (Uniwise)(2022)]{JISC2022a}
+J.I.S.C. (Uniwise).
+\newblock {Online proctoring: panacea or problem?}
+\newblock
+  \url{https://www.jisc.ac.uk/membership/stories/online-proctoring-panacea-or-problem},
+  2022.
+
+\bibitem[Williams and Wong(2009)]{WilliamsWong2009a}
+B.~Williams and A.~Wong.
+\newblock {The efficacy of final examination: A comparative study of
+  closed-book, invigilated exams and open-book, open-web exams}.
+\newblock \emph{Br. J. Educ. Technol.}, 40:\penalty0 227--236, 2009.
+
+\end{thebibliography}
