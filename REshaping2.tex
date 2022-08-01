@@ -1,0 +1,125 @@
+\font\manual=manfnt
+\def\dbend{{\manual\char127}}
+\def\eqq{{\buildrel?\over=}}
+\def\C{\mathbf{ C}}
+\def\N{\mathbf{ N}}
+\def\Q{\mathbf{ Q}}
+\def\R{\mathbf{ R}}
+\def\Z{\mathbf{Z}}
+\def\F{\mathbf{F}}
+\def\softO{\tilde{\cal O}}
+\def\O{{\cal O}}
+%\def\N{{\bf N}}
+%\def\Q{{\bf Q}}
+%\def\R{{\bf R}}
+%\def\Z{{\bf Z}}
+\def\action#1{\hfil\rlap{\bf#1}\break}
+\def\pcite#1{[#1]}
+\def\RootOf{\mathop{\rm RootOf}\nolimits}
+\def\r#1#2{``#1''$\rightarrow$``#2''}
+\documentclass{article}
+%\bibliographystyle{alphaurl}
+\usepackage[hyphens]{url}
+%\usepackage{enumitem}
+\usepackage{pdfpages}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{combelow}
+\usepackage[show]{ed}
+\usepackage{graphicx}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{notation}{Notation}
+\newtheorem{example}{Example}
+\newtheorem{problem}{Problem}
+\def\decision#1{\par{\bf #1}}
+\def\action#1{\hfil\rlap{\bf#1}\break}
+%\url{https://assessment.bath.ac.uk/admin#grading/overview/78727640}
+\pagestyle{empty}
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+\setcitestyle{authoryear,open={(},close={)}}
+\begin{document}
+\author{Notes by J.H.Davenport}
+\title{REshaping Assessment Excellence: Pandemic and the New Now at the University of Bath}
+\date{31 July 2022}
+\maketitle
+\section{Introduction}
+It is hard to separate teaching from assessment, as assessment drives much student motivation. Some wider questions about student resilience in the pandemic are explored in \citet{Cricketal2022e}. Though there has been much debate about for many years the various forms of assesment, and the role of technology in assessment, actual change has been slow pre-Covid, as evidenced in this statement \citep{WilliamsWong2009a}.
+\begin{quote}
+Indeed, the final examination is a university institution that would appear to be off-limits as far as innovation is concerned. To put this into context, while faculty and students alike will not stray too far from a computer as they go about their daily business, it is still the norm for examinations to be conducted using pen and paper. Does this imply, therefore, that some element of modern learning theory might be sacrificed if it were abandoned in favour of some alternative instrument? Or, given it is still the most commonly administered summative assessment instrument in universities today, is there some other special intrinsic value attached to a closed-book, invigilated exam that justifies its continued use
+\end{quote}
+The authors wonder whether Covid has not been the trigger that puts such innovation within the scope of debate.
+\def\r{$\rightarrow$}
+\section{Models}
+We use the British English word ``invigilated'' --- the corresponding American word is ``proctored''.
+\begin{description}
+\item[Trad-C]A university-managed invigilated examination in an ``examination hall'', with no technology or other resources except the question paper.
+\item[Trad-OR]As above but students can bring in specified paper resources: often called ``open book''. That specification could be very precise: ``A clean copy of the fifth edition of \dots'', or as vague as ``a binder of own notes''.  In practice invigilators find this hard to enforce in a large examination., e.g. that a textbook has no annotations
+\item[Trad-OU]As above with no restrictions on what an be brought it (on paper).
+\item[TakeHome-OU]In a take-home examination, the student is given the question paper, and has to bring the answer back later (generally 24-hours). \citet{bengtsson2019a} is a useful survey of these.
+\item[Interim]Use a Virtual Learning Environment to deliver an examination paper, and collect answers. There are no technological constraints on the help students could acquire.
+\item[Electronic-C]A university-managed examination, generally using a specific software platform\footnote{Bath used Inspera, but the precise choice is probably irrelevant.} for delivery and submission. The students are not allowed to use any other resources, but there are wide variations on how this is enforced, from an honour system, through restricted browsers\footnote{Note that restricted browsers in an invigilited computer room seems to be a pretty satisfactory solution from the academic integrity point of view, though it does have resource implications, and would clearly not have been viable with strict isolation measures.} to full AI-based monitoring. Though it has been sold as a panacea, AI-based monitoring has its limitations \citep{NewYorkTimes2022l} and may be illegal in some jurisdictions \citep{JISC2022a}.
+\item[Electronic-OU]As above, but the students are allowed to use any Internet resources. The wording here is not standardised, but the intention is that the students can consult internet reources, but not people. This raises unsolved questions around ``intelligent''' resources, notably those that can write answers to programming exercises \citep{FinnieAnsleyetal2022a}.
+\end{description}
+\section{University of Bath Timeline}
+The University of Bath has operated a semester system since 1997 for practically all programmes, with examination assessments in, essentially, January and May.
+\begin{description}
+\item[Before]Covid-19, the only option for an examination was Trad-C or Trad-O, nearly all of two hours duration. Though this was not always possible, the aim was that a student should only have one examination per day. It was possible to disguise a {\bf TakeHome-OU} examination as ``coursework''.
+\item[May 2020]Given the timing, {\bf Interim} was the only practicable solution. Since many solutions were ``at home'' across the world, the examinations were still aimed at taking 2 hours, but all students were given a 24-hour window in which to do them. Very few staff had experience in ``open book'' examinations, and certainly not when the whole Internet was an open book. Now we needed to have one examination per day, which stretched the examination period.
+\item[January 2021]We moved to Electronic-O. Because students were in different time zones, is was felt that a fixed start time was impossible. so there was still a 24-hour window. Mathematical Sciences took the option to insist that students only had three hours (conceived of as a 2 hour exam plus an hour for administration) to complete the examination from starting the process. But the students could still choose their start time (based on their home time zone) as long as the exam was done in the 24-hour window.
+\item[May 2021]Based on the success of the Mathematical Sciences limited time experiment, and probably because staff now had more experience of setting open-book exams and getting the time requirements roughly right\footnote{It is under-appreciated how difficult this is: one of the most valuable feedback from colleagues or external examiners, especially to relatively new lecturers (to the subject/level combination, even if experienced eslewhere) can be about time requirements.}, many more departments moved to the three-hour limit.
+\item[January 2022]Now that students were ``largely expected'' to be at Bath, the University kept to three-hour (still thought of as 2+1) examinations, but now fixed the time, rather than allowing a 24-hour window.
+\item[May 2022]Following very substantial pressure by the academics, the university allowed some {\bf Trad-C} examinations in first-year subjects.
+\end{description}
+\section{Cheating etc.}
+\citet{Dickinson2022a} reports a small ($N=900$) survey \citep{AcademicAppeals2022a}\footnote{One item from this not reproduced is ``Of those students who admitted to cheating, only a very small minority --- 5\% --- were caught by their institutions''. } of UK students.
+\begin{quote}
+  The numbers suggest that 1 in 6 students in the UK have cheated in online exams this academic year. Over half of those surveyed knew people who had cheated in online assessments. Almost 8 out 10 believed that it was easier to cheat in online exams than in exam halls, and the methods for cheating were often laughably rudimentary – including calling or messaging friends for help during the exam, using google to search for answers on a separate device, or asking parents to read through answers prior to submission.
+\end{quote}
+The University of Bath has certainly experienced an increase in detected use of ``unfair means'' (the plrase used in Regulations). There is probably a larger increase in undetected use of unfair means.
+\section{JHD's experiences}
+In this period, JHD has eben teaching two modules with examinations.
+\begin{description}
+\item[CM30070---Computer Algebra]A module aimed at senior-year mathematicians and computer scientists, based on the author's updated draft version (given to students) of \cite{Davenportetal1988}. This had always had a {\bf Trad-C} examination.
+\item[CM50209--Cybersecurity]A module aimed at MSC Computer science students, but taken by others as well.  
+\end{description}
+
+\section{Conclusion}
+\bibliography{../../../jhd}
+\end{document}
+\section{}
+\begin{description}
+\item[Q]
+\item[A]
+\end{description}
+\begin{enumerate}
+\item 
+\end{enumerate}
+\begin{quote}
+\end{quote}
+\begin{itemize}
+\item
+\end{itemize}
+\begin{example}
+\end{example}
+\begin{definition}
+\end{definition}
+\begin{theorem}
+\end{theorem}
+\begin{description}
+\item[Theme 1]
+\item[Theme 2]
+\item[Theme 3]
+\item[Theme 5]
+\item[Theme 6]
+\item[Monitoring]
+\end{description}
+\begin{enumerate}
+\item 
+\end{enumerate}
+\begin{quote}
+\end{quote}
