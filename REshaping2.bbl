@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,6 +17,20 @@
 L.~Bengtsson.
 \newblock {Take-Home Exams in Higher Education: A Systematic Review}.
 \newblock \emph{Educ. Sci.}, 9:\penalty0 267--282, 2019.
+
+\bibitem[Crick et~al.(2022)Crick, Prickett, and Bradnum]{Cricketal2022e}
+T.~Crick, T.~Prickett, and J.~Bradnum.
+\newblock {Exploring Learner Resilience and Performance of First-Year Computer
+  Science Undergraduate Students during the COVID-19 Pandemic}.
+\newblock \emph{ITiCSE '22: Proceedings of the 27th ACM Conference on on
+  Innovation and Technology in Computer Science Education Vol. 1}, pages
+  519--525, 2022.
+
+\bibitem[Davenport et~al.(1988)Davenport, Siret, and
+  Tournier]{Davenportetal1988}
+J.~Davenport, Y.~Siret, and E.~Tournier.
+\newblock {Computer Algebra}.
+\newblock \emph{Academic Press}, 1988.
 
 \bibitem[Dickinson(2022)]{Dickinson2022a}
 J.~Dickinson.
