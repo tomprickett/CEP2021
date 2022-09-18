@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{BDF{\etalchar{+}}19}
+\begin{thebibliography}{FADB{\etalchar{+}}22}
 
 \bibitem[{Alp}22]{AcademicAppeals2022a}
 {Alpha Academic Appeals}.
@@ -18,11 +18,40 @@ Jack Betteridge, James~H. Davenport, Melina Freitag, Willem Heijltjes, Stef
   Proceedings of the 3rd Conference on Computing Education Practice}, pages
   12:1--12:4, New York, NY, USA, 2019. ACM.
 
+\bibitem[Bin22]{Bindley2022a}
+K.~Bindley.
+\newblock {What if the Optimal Workweek Is Two Days in the Office, Not Three?}
+\newblock
+  \url{https://www.wsj.com/articles/the-optimal-workweek-is-two-days-in-the-office-not-three-remote-hybrid-work-11650588893},
+  2022.
+
 \bibitem[Dic22]{Dickinson2022a}
 J.~Dickinson.
 \newblock {Did 1 in 6 students cheat in online assessments this year?}
 \newblock
   \url{https://wonkhe.com/blogs/did-1-in-6-students-cheat-in-online-assessments-this-year/},
+  2022.
+
+\bibitem[FADB{\etalchar{+}}22]{FinnieAnsleyetal2022a}
+Finnie-Ansley.J., P.~Denny, B.A. Becker, A.~Luxton-Reilly, and J.~Prather.
+\newblock {The Robots Are Coming: Exploring the Implications of OpenAI Codex on
+  Introductory Programming}.
+\newblock {\em ACE '22: Australasian Computing Education Conference}, pages
+  10--19, 2022.
+
+\bibitem[{New}22]{NewYorkTimes2022l}
+{New York Times (Kashmir Hill)}.
+\newblock {Accused of Cheating by an Algorithm, and a Professor She Had Never
+  Met}.
+\newblock
+  \url{https://www.nytimes.com/2022/05/27/technology/college-students-cheating-software-honorlock.html},
+  2022.
+
+\bibitem[(Un22]{JISC2022a}
+Joint Information Services~Committee (Uniwise).
+\newblock {Online proctoring: panacea or problem?}
+\newblock
+  \url{https://www.jisc.ac.uk/membership/stories/online-proctoring-panacea-or-problem},
   2022.
 
 \bibitem[WW09]{WilliamsWong2009a}
