@@ -1,6 +1,14 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{BDF{\etalchar{+}}19}
 
+\bibitem[{Alp}22]{AcademicAppeals2022a}
+{Alpha Academic Appeals}.
+\newblock {Press release on prevalence of cheating in online assessment, July
+  2022}.
+\newblock
+  \url{http://www.academicappeals.co.uk/news/05072022201747-press-release-on-prevalence-of-cheating-in-online-assessment--july-2022/},
+  2022.
+
 \bibitem[BDF{\etalchar{+}}19]{Betteridgeetal2019a}
 Jack Betteridge, James~H. Davenport, Melina Freitag, Willem Heijltjes, Stef
   Kynaston, Gregory Sankaran, and Gunnar Traustason.
@@ -9,6 +17,13 @@ Jack Betteridge, James~H. Davenport, Melina Freitag, Willem Heijltjes, Stef
 \newblock In Steven Bradley and Alexandra Cristea, editors, {\em CEP '19:
   Proceedings of the 3rd Conference on Computing Education Practice}, pages
   12:1--12:4, New York, NY, USA, 2019. ACM.
+
+\bibitem[Dic22]{Dickinson2022a}
+J.~Dickinson.
+\newblock {Did 1 in 6 students cheat in online assessments this year?}
+\newblock
+  \url{https://wonkhe.com/blogs/did-1-in-6-students-cheat-in-online-assessments-this-year/},
+  2022.
 
 \bibitem[WW09]{WilliamsWong2009a}
 B.J. Williams and A.~Wong.
