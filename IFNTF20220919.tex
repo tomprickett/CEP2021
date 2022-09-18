@@ -41,9 +41,10 @@
 \usepackage{color}
 
 \title[Reshaping \dots{} Bath]{REshaping Assessment Excellence: COVID-19 and the New Now at the University of Bath}
-\author{James Davenport \& Tom Crick}
+\author{James H. Davenport \& \hbox{Tom Crick\ \qquad\ \qquad}\\
+\small\tt J.H.Davenport@bath.ac.uk \& Thomas.Crick@swansea.ac.uk}
 %(Thanks to RJB for the improved title)}
-\institute{University of Bath}%(visiting Waterloo)}
+\institute{University of Bath \& Swansea University}%(visiting Waterloo)}
 \date{19 September 2022}%\\($\cal J$=JHD's notes; $\cal C$=Chapman:\\ \emph{MATLAB(R) Programming with Applications for Engineers})\\This lecture is being recorded for the benefit of late arrivals}
 \expandafter\def\expandafter\insertshorttitle\expandafter{%
   \insertshorttitle\hfill%
@@ -71,26 +72,47 @@ Indeed, the final examination is a university institution that would appear to b
 \cite{WilliamsWong2009a}
 \end{frame}
 \begin{frame}[fragile]
-\frametitle{Forms of Examination}
+\frametitle{Forms of Examination (Partial)}
 \pause
-\begin{description}
-\item[Trad-C]Invigilated in an ``examination hall''%, with no technology or other resources except the question paper.
-\item[Trad-OR As above but students can bring in specified paper resources: often called “open book”. That specification could be very precise: “A clean copy of the fifth edition of …”, or as vague as “a binder of own notes”. In practice invigilators find this hard to enforce in a large examination., e.g. that a textbook has no annotations.
-\item[Trad-OU As above with no restrictions on what can be brought it (on paper).
-\item[TakeHome-OU In a take-home examination, the student is given the question paper, and has to bring the answer back later (generally 24-hours). Bengtsson (2019) is a useful survey of these, and has two key points. 
-1.	It is concluded that take-home exams may be the preferred choice of assessment method on the higher taxonomy levels because they promote higher-order thinking skills and allow time for reflection.
-2.	Due to the obvious risk of unethical student behaviour, take-home exams are not recommended on the lowest taxonomy level.
-JHD had experimented with this in the past for CM50209 Cybersecurity.
-\item[Interim Use a Virtual Learning Environment to deliver an examination paper, and collect answers. There are no technological constraints on the help students could acquire.
-\item[Electronic-C A university-managed examination, generally using a specific software platform (Bath used Inspera, but the precise choice is probably irrelevant) for delivery and submission. The students are not allowed to use any other resources, but there are wide variations on how this is enforced, from an honour system, through restricted browsers  to full AI-based monitoring. Though it has been sold as a panacea, AI-based monitoring has its limitations (New York Times (Kashmir Hill), 2022) and may be illegal in some jurisdictions (JISC, 2022).
-\item[Electronic-OU As above, but the students are allowed to use any Internet resources. The wording here is not standardised, but the intention is that the students can consult internet resources, but not people. This raises unsolved questions around “intelligent”’ resources, notably those that can write answers to programming exercises (Finnie-Ansley.J. et al., 2022).
-
+\begin{description}[<+->]
+\item[Trad-C]Invigilated in an ``examination hall''. JHD has used this.%, with no technology or other resources except the question paper.
+\item[Trad-OR]As above but students can bring in specified paper resources: often called ``open book''. JHD has used this \cite{Betteridgeetal2019a} to reduce ``memorisation''.
+%That specification could be very precise: “A clean copy of the fifth edition of …”, or as vague as “a binder of own notes”. In practice invigilators find this hard to enforce in a large examination., e.g. that a textbook has no annotations.
+\item[Trad-OU] As above with no restrictions on what can be brought it (on paper).
+\item[TakeHome-OU]In a take-home examination, the student is given the question paper, and has to bring the answer back later (generally 24-hours). JHD had used this.
+%Bengtsson (2019) is a useful survey of these, and has two key points. 
+%1.	It is concluded that take-home exams may be the preferred choice of assessment method on the higher taxonomy levels because they promote higher-order thinking skills and allow time for reflection.
+%2.	Due to the obvious risk of unethical student behaviour, take-home exams are not recommended on the lowest taxonomy level.
+%JHD had experimented with this in the past for CM50209 Cybersecurity.
+\item[Interim]Use a VLE to deliver an examination paper, and collect answers. There are no technological constraints on the help students could acquire.
+\item[Electronic-C]A university-managed examination, generally using specific software. How is ``Closed'' monitored?
+% (Bath used Inspera, but the precise choice is probably irrelevant) for delivery and submission. The students are not allowed to use any other resources, but there are wide variations on how this is enforced, from an honour system, through restricted browsers  to full AI-based monitoring. Though it has been sold as a panacea, AI-based monitoring has its limitations (New York Times (Kashmir Hill), 2022) and may be illegal in some jurisdictions (JISC, 2022).
+\item[Electronic-OU]As above, but the students are allowed to use any Internet resources. %The wording here is not standardised, but the intention is that the students can consult internet resources, but not people. This raises unsolved questions around “intelligent”’ resources, notably those that can write answers to programming exercises (Finnie-Ansley.J. et al., 2022).
 \end{description}
-
 \end{frame}
 \begin{frame}[fragile]
-\frametitle{}
+\frametitle{The Bath timeline}
 \pause
+\begin{description}[<+->]
+\item[Prior]Two hour Trad-C or Trad-O. TakeHome-OU disguised as ``coursework''.
+\item[May 2020] Interim. %Given the timing, Interim was the only practicable solution. Since many solutions were “at home” across the world, the examinations were still aimed at taking two hours, but 
+All students were given a 24-hour window in which to do them. 
+%Very few staff had experience in “open book” examinations, and certainly not when the whole Internet was an open book. Now we needed to have one examination per day, which stretched the examination period.
+\item[January 2021]Electronic-O,
+%We moved to Electronic-O. Because students were in different time zones, it was felt that a fixed start time was impossible, so there was 
+still with a 24-hour window.  Maths took the option to insist that students only had three hours (2 hour exam+1/administration).
+% (conceived of as a 2 hour exam plus an hour for administration) to complete the examination from starting the process. But the students could still choose their start time (based on their home time zone) as long as the exam was done in the 24-hour window.
+\item[May 2021] 
+%Based on the success of the Mathematical Sciences limited time experiment, and probably because staff now had more experience of setting open-book exams and getting the time requirements roughly right , 
+Success, and greater familiarity with Electronic-O, meant
+many more departments moved to the three-hour limit.
+\item[January 2022] 
+%Now that students were “largely expected” to be at Bath, the University kept to 
+three-hour (still thought of as 2+1) examinations for all, but now fixed the start time.
+%, rather than allowing a 24-hour window.
+\item[May 2022] Following very substantial pressure by the academics, the university allowed some Trad-C examinations in first-year subjects.
+
+\end{description}
 \end{frame}
 \begin{frame}[fragile]
 \frametitle{}

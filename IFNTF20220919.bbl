@@ -1,4 +1,14 @@
-\begin{thebibliography}{WW09}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{BDF{\etalchar{+}}19}
+
+\bibitem[BDF{\etalchar{+}}19]{Betteridgeetal2019a}
+Jack Betteridge, James~H. Davenport, Melina Freitag, Willem Heijltjes, Stef
+  Kynaston, Gregory Sankaran, and Gunnar Traustason.
+\newblock Teaching of computing to mathematics students: Programming and
+  discrete mathematics.
+\newblock In Steven Bradley and Alexandra Cristea, editors, {\em CEP '19:
+  Proceedings of the 3rd Conference on Computing Education Practice}, pages
+  12:1--12:4, New York, NY, USA, 2019. ACM.
 
 \bibitem[WW09]{WilliamsWong2009a}
 B.J. Williams and A.~Wong.
