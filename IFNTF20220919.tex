@@ -26,8 +26,8 @@
 \def\loged{\log_{\epsilon\delta}}
 \def\fracDed#1#2{\frac{{\rm d}#1}{{\rm d}_{\epsilon\delta}#2}}
 \bibliographystyle{alpha}
-%\documentclass[notes=hide]{beamer}   % Without notes
-\documentclass[handout]{beamer}   % handout mode 
+\documentclass[notes=hide]{beamer}   % Without notes
+%\documentclass[handout]{beamer}   % handout mode 
 \usepackage[final]{pdfpages}
 
 %\mode<presentation>
@@ -56,7 +56,7 @@
 \titlepage
 }
 \begin{frame}[fragile]
-\frametitle{Setting}
+\frametitle{Context and Scope}
 \pause
 A common remark in commercial IT circles is that Covid did more for ``digital transformation'' in a month than cohorts of Chief  Information Officers etc. had accomplished in a decade. 
 \pause\par
@@ -111,28 +111,30 @@ many more departments moved to the three-hour limit.
 three-hour (still thought of as 2+1) examinations for all, but now fixed the start time.
 %, rather than allowing a 24-hour window.
 \item[May 2022] Following very substantial pressure by the academics, the university allowed some {\bf Trad-C} examinations in first-year subjects.
+\item[Future]Some Trad-C, mostly Electronic-O, experiment with Electronic-O in an invigilated setting.
 \end{description}
 \end{frame}
 \begin{frame}[fragile]
 \frametitle{The student verdict (at Bath)}
-This has been overwhelmingly positive among final year students (as captured by National Student Survey). One of many (22 in Maths, 13 in CS)
+This has been overwhelmingly positive among final year students (as captured by National Student Survey). One of many (22 in Maths, 13 in CS): 
+\pause
 \begin{quote}
 Online exams - the exams work better when they use problems to check your understanding instead of your memory.
 \end{quote}
 \pause
-The students show appreciation of the different things that open-book examinations test,though they assume ``online''=``open book'' --- it was for them. \pause
-The rare negative ones are worth noting.
+The students show appreciation of the different things that open-book examinations test,though they assume ``online''=``open book'' --- it was for them. \pause 
+The rare (N=2) negative ones are worth noting.
 \pause
 \begin{quote}
-I absolutely would not want to keep online exams, in person is much better due to an abundance of cheating.
+I absolutely would not want to keep online exams, in person is much better due to an abundance of cheating. [Maths]
 \end{quote}
 \pause
 \begin{quote}
-Certain exams are more relevant in open-book, online format, but not all.
+Certain exams are more relevant in open-book, online format, but not all. [CS]
 \end{quote}
 \end{frame}
 \begin{frame}[fragile]
-\frametitle{Academic Misconduct}
+\frametitle{Academic Misconduct?}
 \cite{Dickinson2022a} reports a small (N=900) survey \cite{AcademicAppeals2022a}  of UK students. 
 \pause
 \begin{quote}
@@ -141,6 +143,7 @@ The numbers suggest that 1 in 6 students in the UK have cheated in online exams 
 \pause
 The University of Bath has certainly experienced an increase in detected use of ``unfair means''. There is probably a larger increase in undetected use of unfair means.
 \pause\par
+\cite{Williams2022a} also reports a worrying rise, but data come from an online proctoring company.
 \end{frame}
 \iffalse
 Corpus Reformatorum edidit Carolus Gottlieb Bretschneider Volumen XI, 1843.
@@ -159,18 +162,19 @@ We have spoken of the usefulness of examinations, and if they are so great and s
 \item One of JHD's final year examination papers (in the 24-hour setting) was posted on Chegg. No responses were detected.
 \item[\dbend]But it might be very different for first-year examinations, and Maths (staff and students) really wanted {\bf Trad-C} here.
 \item ``I have an online Statistics Examination from 08:30 to 11:30 next Friday. Is anyone familar with ``Definition of continuous random variables (RVs), cumulative distribution functions (CDFs) and probability density functions (PDFs).
-Some common continuous distributions including uniform, exponential and normal. \dots'' [a screenshot of what was obviously a syllabus] please bid to help me. [\url{https://www.freelancer.com/jobs/statistics/}].
+%Some common continuous distributions including uniform, exponential and normal. 
+\dots [a screenshot of what was obviously a 1st/2nd-year syllabus]'' please bid to help me. [\url{https://www.freelancer.com/jobs/statistics/}].
 \end{itemize}
 \end{frame}
 \begin{frame}[fragile]
 \frametitle{Challenges of Online Exams}
 \pause
 \begin{itemize}[<+->]
-\item{\bf Setting}. Open-book exams are very different, and it takes practice to get the difficulty and duration right. The entire community (examiners, mentors, externals) have had to adjust.
+\item{\bf Setting}. Open-book exams are very different, and it takes practice to get the difficulty and duration right. The entire community (examiners, mentors, externals) have had to adjust very rapidly: ``blind leading blind''.
 \item{\bf Misconduct} --- note that ``AI proctoring'' has problems, from legal \cite{JISC2022a} to practical \cite{NewYorkTimes2022l}.  ``Automation bias'' training is probably essential.
 \item{\bf Authenticity} --- is that the student the person we think? Some Italian universities, even pre-Covid, insisted on (short) oral examinations for the teacher to confirm identity and some knowledge.  Expensive, though.
-\item{\bf Stress} on students' ethics --- do we prepare them for this? We have seen nothing on this.
-\item{\bf Definition} of proper/improper online resources. We haven't seen a good definition that will allow Wikipedia searches but not tools that write programs \cite{FinnieAnsleyetal2022a}, say.
+\item{\bf Stress} on students' ethics --- do we prepare them for this? We have seen nothing written on this.
+\item{\bf Definition} of proper/improper online resources. We haven't seen a good definition that will allow Wikipedia searches but not tools that write programs \cite{FinnieAnsleyetal2022a}, say.  JHD says ``non-interactive Internet resources'': this hasn't met a lawyer.
 %\item{\bf }
 %\item{\bf }
 \end{itemize}
@@ -180,12 +184,14 @@ Some common continuous distributions including uniform, exponential and normal. 
 \begin{itemize}[<+->]
 	\item[Q1]\cite{WilliamsWong2009a} ask ``is there some other special intrinsic value attached to a closed-book, invigilated exam that justifies its continued use''?
 	\item[A1]The relative ease of detecting misconduct, and the lack of opportunity for extempore misconduct, are non-trivial factors.
-	\item[Q2]Won't more testing open-book exams be disliked by the students?
+	\item[Q2]Won't more testing open-book exams be disliked by students?
 	\item[A2]Not on Bath's evidence, or nationally \cite{JISC2022a}.
 	\item[Q3]Won't more testing open-book exams be harder to set?
 	\item[A3]Different, certainly, and the speed of the move caught most unprepared. But the system seems to have adjusted.
-	\item[Q4]How do define ``allowed Internet usage'' (?and police it)?
+	\item[Q4]How to define ``allowed Internet usage'' (?and police it)?
 	\item[A4]Good question!
+\item[Q5]Are these ``better'' examinations?
+\item[A5]How to measure? But see \cite{Jensenetal2014a} ``The assessment level incorporated into the course had a significant impact on students' conceptual understanding and final achievement scores''.
 \end{itemize}
 \end{frame}
 
